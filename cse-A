@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+body{
+font-family:Arial,sans-serif;
+background-color:#f2f2f2;
+margin:0;
+padding:0:
+}
+container{
+width:50%;
+margin:auto;
+background-color:white;
+padding:5px;
+border-radius:10px;
+box-shadow:00 10px rgba(0,0,0,0.1);
+margin-top:50px;
+}
+h2{
+text-align:center;
+}
+label{
+display:block;
+margin:10px 0 5px;
+}
+input[type="text"],input[type="email"],input[type="tel"],input[type="date"]{
+width:100%;
+padding:10px;
+margin:5px 0 20 px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+input[type="radio"]{
+margin-right:10px;
+}
+input[type="submit"]{
+width:100%
+background-color:#4CAF50;
+color:green;
+padding:10px;
+boder:none;
+border-radius:5px;
+cusor:pointer;
+font-size:16px;
+}
+input[type="submit"]:hover{
+background-color:45a049;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Registeratin Form</h2>
+<form action="submit-form.php" method="post">
+<label for="fname">First Name:</label>
+<input type="text"id="fname"name="fname" required>
+<label for="lname">Last Name:</label>
+<input type="text"id="lname"name="name" required>
+<label for="email">Email:</label>
+<input type="text"id="email"name="email" required>
+<label for="phone">Phone Number:</label>
+<input type="text"id="tel"name="phone" required>
+<label for="gender">Gender:</label>
+<input type="text"id="lname"name="lname" required>
+<label for="dob">Date of Birth:</label>
+<input type="date"id="dob"name="dob" required>
+<input type="submit" value="submit">
+</form>
+</div>
+</body>
+</html>
